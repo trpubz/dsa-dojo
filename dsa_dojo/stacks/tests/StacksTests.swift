@@ -23,9 +23,11 @@ final class StacksTest: XCTestCase {
         // Any test you write for XCTest can be annotated as throws and async.
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-        let stack_t: Bool = Stacks.validate(d: "(()()())()")
+        let stack_t: Bool = Stacks.validate(d: "(([]){()}())()")
         XCTAssertTrue(stack_t)
-        let stack_f = Stacks.validate(d: "(()()())(]")
+        var stack_f = Stacks.validate(d: "(()()())(]")
+        XCTAssertFalse(stack_f)
+        stack_f = Stacks.validate(d: "([}()()())()")
         XCTAssertFalse(stack_f)
     }
 
