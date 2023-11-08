@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static Stacks.validateHTML(d:):Stacks.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "d[d.index(d.startIndex, offsetBy: idx + idxOffset)]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
