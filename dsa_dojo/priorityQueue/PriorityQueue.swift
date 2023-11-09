@@ -8,34 +8,41 @@
 import Foundation
 
 struct PriorityQueue {
-    var queue: [Plane] = []
+    var queue: [Int:[Plane]] = [:]
     
-    mutating func enqueue(idx: Int, p: Plane) {
-        queue.append(p)
+    mutating func enqueue(priority: Int, p: Plane) {
+        queue[priority, default: Array()].append(p)
     }
     
-    mutating func dequeue() -> Plane? {
-        return self.empty() ? nil : queue.removeFirst()
+    mutating func next() -> Plane? {
+        for (pri, plane) in queue {
+            print(pri)
+        }
+        return nil
     }
     
     func empty() -> Bool {
-        return queue.isEmpty ? true : false
+        return queue.values.isEmpty
     }
     
     func count() -> Int {
         return queue.count
     }
     
-    func peek() -> Plane? {
-        if !empty() {
-            return queue[0]
-        } else {
-            return nil
-        }
+//    func peek() -> Plane? {
+//        if !empty() {
+//            return queue[0]
+//        } else {
+//            return nil
+//        }
+//    }
+    
+    func status() -> [Int:Int] {
+        return queue.mapValues({$0.count})
     }
 }
 
-struct Plane {
+struct Plane: Equatable {
     let name: String
     let expectedDeparture: Int
     let expectedArrival: Int

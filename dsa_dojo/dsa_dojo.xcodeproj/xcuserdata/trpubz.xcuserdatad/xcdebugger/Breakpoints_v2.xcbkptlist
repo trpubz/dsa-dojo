@@ -68,5 +68,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A661660D-BDCC-4838-AE72-F2FC7496AA5B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "priorityQueue/PriorityQueue.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "next()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A661660D-BDCC-4838-AE72-F2FC7496AA5B - f782fb7a79cf4ef8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dsa_dojo.PriorityQueue.next() -&gt; Swift.Optional&lt;dsa_dojo.Plane&gt;"
+                  moduleName = "dsa_dojo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trpubz/turing2308/2mod/challenges/dsa-dojo/dsa_dojo/priorityQueue/PriorityQueue.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "A661660D-BDCC-4838-AE72-F2FC7496AA5B - f782fb7a79cf4ef8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dsa_dojo.PriorityQueue.next() -&gt; Swift.Optional&lt;dsa_dojo.Plane&gt;"
+                  moduleName = "dsa_dojo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trpubz/turing2308/2mod/challenges/dsa-dojo/dsa_dojo/priorityQueue/PriorityQueue.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C73CAC27-86E8-48CC-ADDE-CB6A8955BAD7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "priorityQueue/PriorityQueue.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "next()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C73CAC27-86E8-48CC-ADDE-CB6A8955BAD7 - f782fb7a79cf4f26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dsa_dojo.PriorityQueue.next() -&gt; Swift.Optional&lt;dsa_dojo.Plane&gt;"
+                  moduleName = "dsa_dojo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trpubz/turing2308/2mod/challenges/dsa-dojo/dsa_dojo/priorityQueue/PriorityQueue.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "C73CAC27-86E8-48CC-ADDE-CB6A8955BAD7 - f782fb7a79cf4f07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dsa_dojo.PriorityQueue.next() -&gt; Swift.Optional&lt;dsa_dojo.Plane&gt;"
+                  moduleName = "dsa_dojo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trpubz/turing2308/2mod/challenges/dsa-dojo/dsa_dojo/priorityQueue/PriorityQueue.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "404">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

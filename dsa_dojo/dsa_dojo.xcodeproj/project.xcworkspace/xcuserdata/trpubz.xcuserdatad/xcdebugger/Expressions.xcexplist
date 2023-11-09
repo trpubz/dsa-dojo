@@ -3,10 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "PriorityQueue.next():PriorityQueue.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "static Stacks.validateHTML(d:):Stacks.swift">
          <PersistentStrings>
             <PersistentString
                value = "d[d.index(d.startIndex, offsetBy: idx + idxOffset)]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PriorityQueue.empty():PriorityQueue.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "queue.values.isEmpty">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
