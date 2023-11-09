@@ -38,11 +38,38 @@ final class StacksTest: XCTestCase {
         XCTAssertTrue(stack_t)
         // nested
         html = """
-            <section>
-                <p>test</p>
-            </section>
+            <p>
+                <span>test <code>swift</code></span>
+            </p>
             """
         stack_t = Stacks.validateHTML(d: html)
+        XCTAssertTrue(stack_t)
+        // lvl2
+        var html_lvl2 = """
+            <body>
+                <p>
+                    <span>test <code>swift</code></span>
+                </p>
+                <ul>
+                    <li>got heem</li>
+                </ul>
+            </body>
+            """
+        stack_t = Stacks.validateHTML(d: html_lvl2)
+        XCTAssertTrue(stack_t)
+        // lvl3
+        var html_lvl3 = """
+            <body>
+                <p>
+                    <span>test <code>swift</code></span>
+                </p>
+                <ul>
+                    <li>got heem</li>
+                    <li><p>lvl 3 -- lvl up</p></li>
+                </ul>
+            </body>
+            """
+        stack_t = Stacks.validateHTML(d: html_lvl3)
         XCTAssertTrue(stack_t)
         // tag elements
         html = """

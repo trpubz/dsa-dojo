@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		257915B32AFADEEF002140CB /* Stacks.swift in Resources */ = {isa = PBXBuildFile; fileRef = 257915B02AFAC180002140CB /* Stacks.swift */; };
 		257915B42AFADF03002140CB /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257915B02AFAC180002140CB /* Stacks.swift */; };
 		2580B04B2AF9EAB4002419E6 /* StacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2580B04A2AF9EAB4002419E6 /* StacksTests.swift */; };
+		25DDE7F02AFC80D400D6B3A3 /* QueuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DDE7EF2AFC80D400D6B3A3 /* QueuesTests.swift */; };
+		25DDE7F22AFC80EA00D6B3A3 /* Queues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DDE7F12AFC80EA00D6B3A3 /* Queues.swift */; };
+		25DDE7F62AFD2D4800D6B3A3 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DDE7F52AFD2D4800D6B3A3 /* PriorityQueue.swift */; };
+		25DDE7F92AFD2D8A00D6B3A3 /* PriorityQueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DDE7F82AFD2D8A00D6B3A3 /* PriorityQueueTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +20,11 @@
 		257915B22AFAC329002140CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2580B0472AF9EAB4002419E6 /* dsa_dojo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dsa_dojo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2580B04A2AF9EAB4002419E6 /* StacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksTests.swift; sourceTree = "<group>"; };
+		25DDE7EF2AFC80D400D6B3A3 /* QueuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuesTests.swift; sourceTree = "<group>"; };
+		25DDE7F12AFC80EA00D6B3A3 /* Queues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queues.swift; sourceTree = "<group>"; };
+		25DDE7F32AFC811C00D6B3A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../queues/README.md; sourceTree = "<group>"; };
+		25DDE7F52AFD2D4800D6B3A3 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		25DDE7F82AFD2D8A00D6B3A3 /* PriorityQueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PriorityQueueTest.swift; path = tests/PriorityQueueTest.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +38,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		257915AF2AFAC14C002140CB /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				2580B04A2AF9EAB4002419E6 /* StacksTests.swift */,
-			);
-			path = tests;
-			sourceTree = "<group>";
-		};
 		2580B03C2AF9EAA2002419E6 = {
 			isa = PBXGroup;
 			children = (
+				25DDE7F72AFD2D5100D6B3A3 /* tests */,
+				25DDE7F42AFD2D2A00D6B3A3 /* priorityQueue */,
+				25DDE7ED2AFC806D00D6B3A3 /* queues */,
 				2580B0492AF9EAB4002419E6 /* stacks */,
 				2580B0482AF9EAB4002419E6 /* Products */,
 			);
@@ -57,11 +60,37 @@
 		2580B0492AF9EAB4002419E6 /* stacks */ = {
 			isa = PBXGroup;
 			children = (
-				257915AF2AFAC14C002140CB /* tests */,
 				257915B02AFAC180002140CB /* Stacks.swift */,
 				257915B22AFAC329002140CB /* README.md */,
 			);
 			path = stacks;
+			sourceTree = "<group>";
+		};
+		25DDE7ED2AFC806D00D6B3A3 /* queues */ = {
+			isa = PBXGroup;
+			children = (
+				25DDE7F32AFC811C00D6B3A3 /* README.md */,
+				25DDE7F12AFC80EA00D6B3A3 /* Queues.swift */,
+			);
+			path = queues;
+			sourceTree = "<group>";
+		};
+		25DDE7F42AFD2D2A00D6B3A3 /* priorityQueue */ = {
+			isa = PBXGroup;
+			children = (
+				25DDE7F52AFD2D4800D6B3A3 /* PriorityQueue.swift */,
+			);
+			path = priorityQueue;
+			sourceTree = "<group>";
+		};
+		25DDE7F72AFD2D5100D6B3A3 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				25DDE7F82AFD2D8A00D6B3A3 /* PriorityQueueTest.swift */,
+				2580B04A2AF9EAB4002419E6 /* StacksTests.swift */,
+				25DDE7EF2AFC80D400D6B3A3 /* QueuesTests.swift */,
+			);
+			path = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257915B32AFADEEF002140CB /* Stacks.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				257915B42AFADF03002140CB /* Stacks.swift in Sources */,
+				25DDE7F02AFC80D400D6B3A3 /* QueuesTests.swift in Sources */,
+				25DDE7F62AFD2D4800D6B3A3 /* PriorityQueue.swift in Sources */,
 				2580B04B2AF9EAB4002419E6 /* StacksTests.swift in Sources */,
+				25DDE7F22AFC80EA00D6B3A3 /* Queues.swift in Sources */,
+				25DDE7F92AFD2D8A00D6B3A3 /* PriorityQueueTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
